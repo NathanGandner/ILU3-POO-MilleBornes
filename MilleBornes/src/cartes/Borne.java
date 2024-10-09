@@ -10,6 +10,12 @@ public class Borne extends Carte {
 	public int getKm() {
 		return km;
 	}
-
-
+	
+	@Override
+	public String toString() {
+		StringBuilder sortie = new StringBuilder();
+		sortie.append(km);
+		sortie.append(" KM");
+		return sortie.toString();
+	}
 }

@@ -1,7 +1,5 @@
 package cartes;
 
-import java.util.Iterator;
-
 public class JeuDeCartes extends Carte {
 	private Configuration typesDeCartes[];
 	
