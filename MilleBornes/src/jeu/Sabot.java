@@ -30,6 +30,7 @@ public class Sabot extends Carte implements Iterable<Carte> {
 			throw new ArrayIndexOutOfBoundsException();
 		}
 		sabot[nbCartes++] = carte;
+		nombreOperations++;
 	}
 	
 	public Iterator<Carte> iterator() {
@@ -49,6 +50,7 @@ public class Sabot extends Carte implements Iterable<Carte> {
 	    private boolean nextEffectue = false;
 
 	    public boolean hasNext(){
+	    	verificationConcurrence();
 	    	return indiceIterateur < nbCartes;
 	    }
 	    public Carte next() {
@@ -62,7 +64,8 @@ public class Sabot extends Carte implements Iterable<Carte> {
 	    		throw new NoSuchElementException();
 	    	}
 	    }
-
+	    
+	    @Override
 	    public void remove(){
 	        verificationConcurrence();
 	        if(estVide() || !nextEffectue) {
