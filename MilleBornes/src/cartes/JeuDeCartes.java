@@ -1,7 +1,7 @@
 package cartes;
 
 public class JeuDeCartes extends Carte {
-	private Configuration typesDeCartes[];
+	private Configuration[] typesDeCartes;
 	
 	public JeuDeCartes() {
 		typesDeCartes= new Configuration[] {
@@ -26,7 +26,7 @@ public class JeuDeCartes extends Carte {
         new Configuration(new FinLimite(), 6),
 		};
 	}
-	
+
 	public void affichageJeuDeCartes() {
 		for (int i = 0; i < typesDeCartes.length; i++) {
 			System.out.println(typesDeCartes[i].getNbExemplaire() + " " + typesDeCartes[i].getCarte());
