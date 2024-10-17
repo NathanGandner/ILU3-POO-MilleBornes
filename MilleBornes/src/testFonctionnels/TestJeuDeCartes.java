@@ -11,7 +11,9 @@ public class TestJeuDeCartes extends Carte {
 	}
 	
 	public static void main(String[] args) {
-		TestJeuDeCartes test = new TestJeuDeCartes();
-		test.affichageJeuDeCartes();
+		//TestJeuDeCartes test = new TestJeuDeCartes();
+		//test.affichageJeuDeCartes();
+		JeuDeCartes jeu = new JeuDeCartes();
+		System.out.println(jeu.checkCount());
 	}
 }

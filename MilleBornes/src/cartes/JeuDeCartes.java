@@ -50,6 +50,19 @@ public class JeuDeCartes extends Carte {
 		return cartes;
 	}
 	
+	public boolean checkCount() {
+		Carte[] cartes = donnerCartes();
+		int nbCartes = 0;
+		for(int i = 0; i<typesDeCartes.length; i++) {
+			for(int j = 0; j<typesDeCartes[i].getNbExemplaire(); j++) {
+				if(cartes[nbCartes]!=typesDeCartes[i].getCarte())
+					return false;
+				nbCartes++;
+			}
+		}
+		return true;
+	}
+	
 	private static class Configuration {
 		private Carte carte;
 		private int nbExemplaire;
