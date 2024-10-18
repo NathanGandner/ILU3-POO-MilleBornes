@@ -83,3 +83,5 @@ java.lang.reflect.InaccessibleObjectException: Unable to make public void sun.ni
 2024-10-11 10:11:48,913 [Exodus shared background cleaner] INFO  j.exodus.gc.GarbageCollector - Finished calculation of log utilization from scratch at Z:\ILU3_POO\workspace\.sonarlint\default\xodus-local-only-issue-store718851809023103594
 2024-10-11 12:00:54,309 [ForkJoinPool.commonPool-worker-17] INFO  j.exodus.util.CompressBackupUtil - Backup file "local_only_issue_backup2024-10-11-12-00-54.tar.gz" created.
 2024-10-17 11:18:08,384 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-10-17 13:35:17,058 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2024-10-18 10:12:35,177 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.

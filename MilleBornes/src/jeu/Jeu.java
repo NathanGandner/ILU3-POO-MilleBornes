@@ -12,12 +12,14 @@ public class Jeu extends Carte {
 	private Sabot sabot;
 
 	public Jeu() {
-		JeuDeCartes Jeu = new JeuDeCartes();
-		Carte[] cartes = Jeu.donnerCartes();
-		List<Carte> listeCartes = new ArrayList<Carte>();
+		JeuDeCartes jeu = new JeuDeCartes();
+		Carte[] cartes = jeu.donnerCartes();
+		List<Carte> listeCartes = new ArrayList<>();
 		Collections.addAll(listeCartes, cartes);
 		GestionCartes.melanger(listeCartes);
-		Sabot sabot = new Sabot((listeCartes.toArray());
+		Carte[] tabCartes = (Carte[]) listeCartes.toArray();
+		Sabot sabotcree = new Sabot(tabCartes);
+		this.sabot = sabotcree;
 	}
 
 }
