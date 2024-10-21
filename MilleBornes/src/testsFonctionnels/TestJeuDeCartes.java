@@ -1,4 +1,4 @@
-package testFonctionnels;
+package testsFonctionnels;
 
 import cartes.Carte;
 import cartes.JeuDeCartes;

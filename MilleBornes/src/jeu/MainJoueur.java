@@ -1,21 +1,39 @@
 package jeu;
 
+import java.util.Iterator;
+import java.util.List;
+
 import cartes.Carte;
 
-public class MainJoueur extends Carte {
-	Carte[] main;
+public class MainJoueur extends Carte implements Iterable<Carte> {
+	List<Carte> main;
 	
 	public MainJoueur() {
-		Carte[] main = new Carte[106];
-		this.main=main;
+		super();
 	}
 	
-	void prendre() {
-		
+	public void prendre(Carte carte) {
+		main.add(carte);
 	}
 	
-	void jouer() {
-		
+	public void jouer(Carte carte) {
+		assert(main.contains(carte));
+		main.remove(carte);
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder out = new StringBuilder();
+		for(Carte carte: main) {
+			out.append("-");
+			out.append(carte);
+			out.append("\n");
+		}
+		return out.toString();
+	}
+
+	public Iterator<Carte> iterator() {
+		return main.listIterator();
 	}
 
 }

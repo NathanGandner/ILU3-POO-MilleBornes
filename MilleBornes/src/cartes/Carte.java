@@ -1,5 +1,6 @@
 package cartes;
 
+
 public abstract class Carte {
 	
 	protected Carte() {
@@ -26,5 +27,6 @@ public abstract class Carte {
 			return false;
 		}
 	}
+
 	
 }

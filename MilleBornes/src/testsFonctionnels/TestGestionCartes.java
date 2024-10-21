@@ -1,4 +1,4 @@
-package testFonctionnels;
+package testsFonctionnels;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
