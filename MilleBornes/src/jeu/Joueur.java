@@ -42,5 +42,9 @@ public class Joueur extends Carte {
 	public int donnerKmParcourus() {
 		return zoneDeJeu.donnerKmParcourus();
 	}
+	
+	public boolean estDepotAutorise(Carte carte) {
+		return zoneDeJeu.estDepotAutorise(carte);
+	}
 
 }
